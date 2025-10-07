@@ -1,0 +1,2 @@
+add() called with 5 and 10, result = 15
+add() called with 3 and 7, result = 10

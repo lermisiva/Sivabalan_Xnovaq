@@ -1,0 +1,34 @@
+
+	
+Function name :log_func 
+ARG :() 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:30:44 
+Return value:Siva
+	
+Function name :add 
+ARG :(('sss', 'ww', 'www'), ['sss', 'aqa', 'www']) 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:30:49 
+Return value:7
+	
+Function name :key_value 
+ARG :() 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:30:55 
+Return value:{'name': 'siva'}	
+Function name :log_func 
+ARG :() 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:31:27 
+Return value:siva	
+Function name :add 
+ARG :(('sss', 'ww', 'www'), ['sss', 'aqa', 'www']) 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:31:29 
+Return value:3	
+Function name :key_value 
+ARG :() 
+Keyword ARG :{} 
+Timestamp :2025-10-07 22:31:36 
+Return value:{'name': 'surya'}
