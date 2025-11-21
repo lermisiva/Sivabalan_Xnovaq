@@ -1,0 +1,80 @@
+nmvI. Data Structure Creation & Loading:
+
+These functions are used to get data into pandas DataFrames or Series.
+
+1. pd.DataFrame(): The primary constructor to create a DataFrame from various data structures (dicts, lists, NumPy arrays, Series).
+2. pd.read_csv(): The most common function for loading data from CSV files. (There are also `read_excel`, `read_sql`, `read_json`, etc.)
+3. pd.Series(): Constructor for creating a Series.
+
+---
+
+II. Data Inspection & Information:
+
+Functions/methods to get a quick overview of your data.
+
+1.  df.head() / df.tail(): View the first/last N rows of the DataFrame.
+2.  df.info(): Get a concise summary of the DataFrame, including data types, non-null values, and memory usage.
+3.  df.describe(): Generate descriptive statistics (count, mean, std, min, max, quartiles) for numerical columns.
+4.  df.shape: (Attribute, not a function) Returns a tuple representing the dimensions (rows, columns) of the DataFrame.
+5.  df.dtypes: (Attribute) Returns the data type of each column.
+6.  df.index: (Attribute) Returns the index (row labels) of the DataFrame.
+7.  df.columns: (Attribute) Returns the column labels of the DataFrame.
+8.  df.value_counts(): (Series method) Returns a Series containing counts of unique values.
+
+---
+
+III. Data Selection & Filtering:
+
+How to access and subset your data.
+
+1.  df.loc[]: Label-based indexing for selecting rows and columns.
+2.  df.iloc[]: Integer-location based indexing for selecting rows and columns.
+3.  Bracket Notation (df[]): Basic column selection, often used for filtering rows with boolean arrays (e.g., `df[df['col'] > 5]`).
+
+---
+
+IV. Data Cleaning & Handling Missing Data:
+
+Functions for preparing your data for analysis.
+
+1.  df.isnull() / df.isna(): (Alias) Returns a boolean DataFrame indicating missing values (`True` for NaN).
+2.  df.notnull() / df.notna(): (Alias) Returns a boolean DataFrame indicating non-missing values.
+3.  df.dropna(): Remove rows or columns containing missing values.
+    "DataFrame.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)"
+4.  df.fillna(): Fill missing values with a specified value or method (e.g., forward-fill, backward-fill, mean).
+5.  df.drop_duplicates(): Remove duplicate rows.
+6.  df.rename(): Rename columns or index labels.
+7.  df.astype(): Change the data type of columns.
+
+---
+
+V. Data Transformation & Manipulation:
+
+Functions for modifying and reshaping your data.
+
+1.  pd.concat(): Concatenate (stack or join side-by-side) DataFrames/Series.
+2.  pd.merge(): Combine DataFrames based on common columns (like SQL joins).
+3.  df.groupby(): Group DataFrame by one or more columns for aggregation.
+4.  df.apply(): Apply a function along an axis of the DataFrame.
+5.  df.map() / Series.map(): Map values from one set to another based on a dictionary or Series. (Series.map is more common)
+6.  df.pivot_table(): Create spreadsheet-style pivot tables.
+7.  df.set_index() /  df.reset_index(): Manipulate the DataFrame index.
+8.  df.sort_values(): Sort DataFrame by the values in one or more columns.
+9.  df.sort_index(): Sort DataFrame by its index.
+10. Arithmetic Operations (`+`, `-`, `*`, `/`): Element-wise operations, often aligning by index.
+
+---
+
+### **VI. Aggregation Functions (often used after `groupby`):**
+
+
+
+1.  .sum(): Sum of values.
+2.  .mean(): Mean of values.
+3.  .median(): Median of values.
+4.  .min() / .max(): Minimum/Maximum values.
+5.  .count(): Number of non-null observations.
+6.  .agg() / .aggregate(): Apply multiple aggregation functions to one or more columns.
+7.  .groupby(value)
+---
+if you check index and value use enumurate like for i in enumrate(list):
