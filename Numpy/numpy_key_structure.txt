@@ -1,0 +1,67 @@
+NumPy Key Structure (Simple Explanation)
+
+1.  Array Creation
+
+-   np.array(): Create array manually.
+-   np.zeros(): Array filled with 0s.
+-   np.ones(): Array filled with 1s.
+-   np.arange(): Range of numbers.
+-   np.linspace(): Evenly spaced numbers.
+-   np.random.randint(): Random integers.
+-   np.random.rand(): Random floats.
+
+2.  Array Attributes
+
+-   arr.shape: Rows and columns.
+-   arr.ndim: Dimensions.
+-   arr.size: Total elements.
+-   arr.dtype: Data type.
+-   arr.itemsize: Bytes per element.
+
+3.  Indexing and Slicing
+
+-   arr[2]: Get element.
+-   arr[2,3]: Row 2, column 3.
+-   arr[:,0]: First column.
+-   arr[1:4]: Slice rows.
+-   arr[::2]: Skip elements.
+
+4.  Math Operations
+
+-   arr1 + arr2: Add.
+-   arr * 5: Multiply with number.
+-   np.sum(), np.mean(), np.min(), np.max(): Stats, np.std() ==> standard Deviation ,np.var() ==> variance
+
+5.  Boolean Operations
+
+-   arr > 50: Condition.
+-   arr[arr > 50]: Filter.
+-   np.where(): Replace values.
+    np.where(condition, value_if_true, value_if_false)
+
+6.  Array Manipulation
+
+-   reshape(): Change shape.
+-   flatten(): 1D array.
+-   concatenate(), vstack(), hstack(): Combine arrays.
+
+7.  Linear Algebra
+
+-   np.dot(): Dot product.
+-   np.matmul(): Matrix multiplication.
+-   np.linalg.inv(): Inverse.
+-   np.linalg.det(): Determinant.
+-   np.linalg.eig(): Eigenvalues.
+
+8.  Random Functions
+
+-   randint(), rand(), randn(), choice(): Random generation.
+
+9.  File Handling
+
+-   np.load(): Load file.
+-   np.save(): Save file.
+-   np.genfromtxt(): Load CSV.
+-   np.savetxt(): Save CSV.
+10. MAtrix
+ np.matmul(A, B) # matrix multiplication

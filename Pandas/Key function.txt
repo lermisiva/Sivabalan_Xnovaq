@@ -76,5 +76,23 @@ Functions for modifying and reshaping your data.
 5.  .count(): Number of non-null observations.
 6.  .agg() / .aggregate(): Apply multiple aggregation functions to one or more columns.
 7.  .groupby(value)
+
+Problems:
+
+❌ Inside agg() you cannot write:
+
+student['Totl_MArks'].mean()
+
+student['studentId'].count()
+
+Because agg() expects column name + function, NOT a full calculation.
+
+❌ Missing comma between the two lines.
+
+❌ Column names are spelled wrong
+
+Totl_MArks → should be Total_Marks
+
+studentId → should be StudentID
 ---
 if you check index and value use enumurate like for i in enumrate(list):
