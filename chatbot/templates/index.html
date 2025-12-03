@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #chat-box { width: 400px; height: 300px; border: 1px solid #ccc; padding: 10px; overflow-y: auto; margin-bottom: 10px; }
+        #msg { width: 300px; }
+        button { padding: 5px 10px; }
+        .user { color: blue; }
+        .bot { color: green; }
+    </style>
+</head>
+<body>
+
+    <h2>Sample Chatbot</h2>
+    <div id="chat-box"></div>
+
+    <input id="msg" type="text" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+
+        // Unique user session id
+        let sessionId = "user_123";
+
+        async function sendMessage() {
+            const messageInput = document.getElementById("msg");
+            const chatBox = document.getElementById("chat-box");
+            const message = messageInput.value;
+
+            if (!message) return;
+
+            // Show user message
+            chatBox.innerHTML += `<div class="user"><b>You:</b> ${message}</div>`;
+
+            // SEND REQUEST TO FASTAPI SERVER
+            const response = await fetch("http://127.0.0.1:8000/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    message: message,
+                    session_id: sessionId
+                })
+            });
+
+            const data = await response.json();
+
+            // Show bot reply
+            chatBox.innerHTML += `<div class="bot"><b>Bot:</b> ${data.reply}</div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Clear box
+            messageInput.value = "";
+
+            document.getElementById("msg").addEventListener("keyup", function(event) {
+             if (event.key === "Enter") {
+                sendMessage();
+                }
+             })
+        }
+
+    </script>
+</body>
+</html>
