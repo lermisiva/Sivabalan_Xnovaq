@@ -1,0 +1,57 @@
+
+layer,tool_name,tool_type,short_description
+Data Sources,PostgreSQL,Relational Database,Stores structured transactional data such as orders and customers
+Data Sources,MongoDB,NoSQL Database,Stores semi-structured JSON documents
+Data Sources,Clickstream Logs,Event Data,Captures user interactions from websites and mobile applications
+Data Sources,CSV Files,File Data,Flat files used for batch data exchange and vendor data
+
+Data Ingestion,Apache Kafka,Streaming Platform,Captures and transports real-time event data
+Data Ingestion,AWS DMS,CDC Tool,Replicates changes from databases to cloud storage
+Data Ingestion,REST APIs,API Ingestion,Fetches data from third-party systems and applications
+Data Ingestion,Batch ETL Jobs,ETL Process,Loads bulk data at scheduled intervals
+
+Data Storage,Amazon S3,Object Storage,Stores raw and processed data in a scalable data lake
+Data Storage,Azure Data Lake,Data Lake Storage,Centralized cloud storage for analytics data
+Data Storage,Google Cloud Storage,Object Storage,Stores analytics and archival data
+Data Storage,Cold Storage,Archive Storage,Low-cost storage for historical data
+
+Data Processing,Apache Spark,Distributed Processing,Processes large datasets using parallel computation
+Data Processing,Azure Databricks,Analytics Platform,Managed Spark environment for big data processing
+Data Processing,AWS Glue,ETL Service,Serverless data integration and transformation tool
+Data Processing,dbt,Transformation Tool,Performs SQL-based transformations inside data warehouses
+
+Orchestration,Apache Airflow,Workflow Orchestration,Schedules and monitors data pipelines
+Orchestration,AWS MWAA,Managed Airflow,Cloud-managed Apache Airflow service
+Orchestration,Azure Data Factory Orchestration,Pipeline Control,Manages data workflow dependencies
+
+Data Quality,Great Expectations,Data Validation,Validates data accuracy and business rules
+Data Quality,AWS Glue Data Quality,Data Quality Tool,Checks schemas and data consistency
+Data Quality,Custom Checks,Validation Logic,Custom rules implemented in Spark or SQL
+
+Data Warehouse,Amazon Redshift,Cloud Data Warehouse,Stores analytics-ready structured data
+Data Warehouse,BigQuery,Serverless Warehouse,Runs fast SQL queries on large datasets
+Data Warehouse,Azure Synapse,Analytics Warehouse,Combines data warehousing and big data analytics
+
+Analytics,Power BI,BI Tool,Creates dashboards and reports for business users
+Analytics,Amazon QuickSight,BI Tool,Cloud-native business intelligence service
+Analytics,Tableau,BI Tool,Visual analytics and interactive dashboards
+
+Metadata & Governance,AWS Glue Data Catalog,Metadata Management,Stores table schemas and metadata
+Metadata & Governance,Apache Hive Metastore,Metadata Store,Manages schema information for data tables
+Metadata & Governance,Microsoft Purview,Data Governance,Manages data discovery and compliance
+
+Security & Access,AWS IAM,Access Control,Manages permissions and user access
+Security & Access,OAuth,Authentication,Secures APIs and services
+Security & Access,Encryption,Data Security,Protects data at rest and in transit
+
+Monitoring & Observability,CloudWatch,Monitoring Service,Monitors logs, metrics, and pipeline health
+Monitoring & Observability,Prometheus,Metrics Monitoring,Collects system and application metrics
+Monitoring & Observability,Grafana,Visualization Tool,Visualizes monitoring metrics and alerts
+
+CI/CD & Infrastructure,Git,Version Control,Tracks code changes and collaboration
+CI/CD & Infrastructure,GitHub Actions,CI/CD Tool,Automates build and deployment pipelines
+CI/CD & Infrastructure,Terraform,Infrastructure as Code,Automates cloud resource provisioning
+
+Data Consumption,REST APIs,Data Serving,Exposes data to applications and services
+Data Consumption,Machine Learning Pipelines,AI Integration,Uses data for predictive models
+Data Consumption,Application Dashboards,Business Apps,Consumes curated data for operations

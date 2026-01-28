@@ -1,0 +1,13 @@
+tool_category,tool_name,campaign_id,customer_id,channel,metric_type,metric_value,event_timestamp
+Email Marketing,Mailchimp,CAMP_EMAIL_001,CUST101,Email,Email_Sent,1,2026-01-20 10:15:00
+Email Marketing,Mailchimp,CAMP_EMAIL_001,CUST101,Email,Email_Opened,1,2026-01-20 10:16:30
+Email Marketing,Mailchimp,CAMP_EMAIL_001,CUST101,Email,Email_Clicked,1,2026-01-20 10:18:00
+Digital Advertising,Google Ads,CAMP_ADS_201,CUST205,Search Ad,Ad_Click,1,2026-01-20 11:05:45
+Digital Advertising,Google Ads,CAMP_ADS_201,CUST205,Search Ad,Conversion,1,2026-01-20 11:20:10
+CRM,Salesforce,CAMP_CRM_301,CUST309,CRM,Lead_Assigned,1,2026-01-19 09:30:00
+CRM,Salesforce,CAMP_CRM_301,CUST309,CRM,Customer_Converted,1,2026-01-19 14:10:50
+Push Notification,Firebase,CAMP_PUSH_401,CUST412,Mobile App,Notification_Sent,1,2026-01-21 18:00:00
+Push Notification,Firebase,CAMP_PUSH_401,CUST412,Mobile App,Notification_Clicked,1,2026-01-21 18:02:15
+Web Analytics,Google Analytics,CAMP_WEB_501,CUST518,Website,Page_View,3,2026-01-21 20:45:00
+Web Analytics,Google Analytics,CAMP_WEB_501,CUST518,Website,Add_To_Cart,1,2026-01-21 20:47:30
+``
